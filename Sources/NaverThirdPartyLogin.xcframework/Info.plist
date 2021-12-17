@@ -11,7 +11,6 @@
 			<string>NaverThirdPartyLogin.framework</string>
 			<key>SupportedArchitectures</key>
 			<array>
-				<string>i386</string>
 				<string>x86_64</string>
 			</array>
 			<key>SupportedPlatform</key>
