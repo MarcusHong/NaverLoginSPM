@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>LibraryIdentifier</key>
-			<string>ios-i386_x86_64-simulator</string>
+			<string>ios-x86_64-simulator</string>
 			<key>LibraryPath</key>
 			<string>NaverThirdPartyLogin.framework</string>
 			<key>SupportedArchitectures</key>
