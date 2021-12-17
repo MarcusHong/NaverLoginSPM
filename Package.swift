@@ -4,25 +4,22 @@
 import PackageDescription
 
 let package = Package(
-    name: "NaverLoginSPM",
-    products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
-        .library(
-            name: "NaverLoginSPM",
-            targets: ["NaverLoginSPM"]),
-    ],
-    dependencies: [
-        // Dependencies declare other packages that this package depends on.
-        // .package(url: /* package url */, from: "1.0.0"),
-    ],
-    targets: [
-        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
-        // Targets can depend on other targets in this package, and on products in packages this package depends on.
-        .target(
-            name: "NaverLoginSPM",
-            dependencies: []),
-        .testTarget(
-            name: "NaverLoginSPMTests",
-            dependencies: ["NaverLoginSPM"]),
-    ]
+  name: "NaverLoginSPM",
+  platforms: [
+        .macOS(.v10_12),
+        .iOS(.v10),
+        .tvOS(.v10),
+        .watchOS(.v3)
+  ],
+  products: [
+      .library(
+          name: "naveridlogin-sdk-ios",
+          targets: ["naveridlogin-sdk-ios"])
+  ],
+  dependencies: [],
+  targets: [
+      .binaryTarget(
+          name: "naveridlogin-sdk-ios",
+          path: "Sources/NaverThirdPartyLogin.xcframework")
+  ]
 )
