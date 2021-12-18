@@ -6,7 +6,7 @@ import PackageDescription
 let package = Package(
   name: "NaverLoginSPM",
   platforms: [
-        .iOS(.v10)
+        .iOS(.v14)
   ],
   products: [
       .library(
